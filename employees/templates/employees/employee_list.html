@@ -1,0 +1,77 @@
+{% extends 'employees/base.html' %}
+
+{% block content %}
+
+<div class="card p-4">
+
+<h3 class="mb-4">Employee Dashboard</h3>
+<div class="row mb-4">
+
+<div class="col-md-4">
+<div class="card p-3 text-center">
+<h6>Total Employees</h6>
+<h3>{{ total_employees }}</h3>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-3 text-center">
+<h6>Departments</h6>
+<h3>{{ departments }}</h3>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-3 text-center">
+<h6>Roles</h6>
+<h3>{{ roles }}</h3>
+</div>
+</div>
+
+</div>
+<table class="table table-hover">
+
+<thead class="table-dark">
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Department</th>
+<th>Role</th>
+<th>Date Joined</th>
+<th>Profile</th>
+<th>Actions</th>
+</tr>
+</thead>
+
+<tbody>
+
+{% for emp in employees %}
+
+<tr>
+<td>{{ emp.name }}</td>
+<td>{{ emp.email }}</td>
+<td>
+<span class="badge bg-primary">{{ emp.department }}</span>
+</td>
+<td>{{ emp.role }}</td>
+<td>{{ emp.date_joined }}</td>
+<td>
+{% if emp.profile_image %}
+<img src="{{ emp.profile_image.url }}" width="50" height="50" style="border-radius:50%;">
+{% endif %}
+</td>
+<td>
+<a href="/edit/{{ emp.id }}/" class="btn btn-sm btn-warning">Edit</a>
+<a href="/delete/{{ emp.id }}/" class="btn btn-sm btn-danger">Delete</a>
+</td>
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+</div>
+
+{% endblock %}
