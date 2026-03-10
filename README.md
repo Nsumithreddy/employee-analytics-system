@@ -1,4 +1,3 @@
-cat << 'EOF' > README.md
 # Employee Analytics & Management System
 
 A full-stack web application built using **Django** that allows organizations to manage employee records and visualize analytics through an interactive dashboard.
