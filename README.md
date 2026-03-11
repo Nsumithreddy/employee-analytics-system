@@ -16,24 +16,6 @@ This project demonstrates **backend development, data analysis, cloud image stor
 ✔ **Data Processing with Pandas**
 ✔ **Interactive charts using Chart.js**
 
----
-
-## 🖼 Screenshots
-
-### Employee Dashboard
-
-![Dashboard](assets/dashboard.png)
-
-### Add Employee
-
-![Add Employee](assets/add_employee.png)
-
-### Analytics Dashboard
-
-![Analytics](assets/analytics.png)
-
----
-
 ## 🛠 Tech Stack
 
 ### Backend
