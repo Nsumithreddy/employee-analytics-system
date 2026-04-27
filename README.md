@@ -16,6 +16,9 @@ This project demonstrates **backend development, data analysis, cloud image stor
 ✔ **Data Processing with Pandas**
 ✔ **Interactive charts using Chart.js**
 
+### 📋 Employee Management Dashboard
+![Employee Dashboard](employee_management_dashboard.png)
+
 ## Dashboard Preview
 ![Employee Dashboard](Dashboard.png)
 
